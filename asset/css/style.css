@@ -41,6 +41,10 @@ a {
   padding: 25px 41px;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
+
 /* Header */
 .header {
   background: #fff;
@@ -169,6 +173,10 @@ a {
   height: 62px;
   text-align: center;
   cursor: pointer;
+}
+
+.content-block .cta .play:hover {
+  border: 1px solid var(--primary-color);
 }
 
 .hero .media-block {
@@ -342,4 +350,65 @@ a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
+}
+
+/* Features */
+.features {
+  padding: 130px 135px 0;
+}
+
+.features .features-top .title {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.features .features-top .heading {
+  margin-top: 18px;
+  color: #0d1111;
+  font-family: Poppins;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.33;
+  width: 577px;
+}
+
+.features .features-top .desc {
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 590px;
+  line-height: normal;
+}
+
+.extensions {
+  margin-top: 80px;
+}
+
+.extensions .list-ex {
+  gap: 209px;
+  display: flex;
+  align-items: center;
+}
+
+.extensions .item-ex .title {
+  margin-top: 26px;
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.extensions .item-ex .desc {
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.69;
+  width: 223px;
+}
+
+.extensions .icon .icon-ex {
+  display: flex;
+  align-items: center;
 }
