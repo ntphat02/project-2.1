@@ -17,6 +17,11 @@ body {
 
 /* Common */
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -393,6 +398,7 @@ a {
 }
 
 .extensions .item-ex .title {
+  cursor: pointer;
   margin-top: 26px;
   color: #0d1111;
   font-size: 2rem;
@@ -411,4 +417,394 @@ a {
 .extensions .icon .icon-ex {
   display: flex;
   align-items: center;
+}
+
+/* Popular */
+.popular {
+  padding-top: 130px;
+}
+
+.popular .popular-top .title {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.popular .caption {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.popular-top .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-top .row .desc {
+  margin-top: 19px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.78;
+  width: 525px;
+}
+
+.popular-top .row .view-click {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.popular .list-popular {
+  margin-top: 79px;
+  display: flex;
+  gap: 47px;
+  border-radius: 8px;
+}
+
+.popular .item-popular {
+  position: relative;
+  flex: 1;
+  background: #d0efed;
+  border-radius: 8px;
+}
+
+.item-popular .body {
+  background: #fff;
+  position: absolute;
+  padding: 18px 25px 29px;
+  border-radius: 8px;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+  left: 17px;
+  right: 17px;
+  top: 321px;
+}
+
+.popular .list-popular .thumb {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 393px;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+
+.item-popular .body .title {
+  cursor: pointer;
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.item-popular .body .value {
+  margin-top: 16px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.item-popular .body strong {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.item-popular .body .desc {
+  margin-top: 8px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.item-popular .body .row {
+  display: flex;
+}
+
+.item-popular .row .info {
+  margin-top: 18px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.item-popular .row .info::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--primary-color);
+  left: -15px;
+  top: 4px;
+}
+
+.item-popular .row .info:nth-of-type(1) {
+  margin-left: 15px;
+}
+
+.item-popular .row .info:nth-of-type(2) {
+  margin-left: 30px;
+}
+
+/* Rate */
+.rate {
+  padding: 265px 0 0;
+}
+
+.rate .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate .row {
+  gap: 202px;
+}
+
+.rate .list-row .value {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+
+.rate .list-row .desc {
+  margin-top: 11px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* about */
+.about {
+  padding: 264px 0 0;
+}
+
+.about .body {
+  display: flex;
+}
+
+.about .about .about-left {
+  width: 36%;
+}
+
+.about .about-left blockquote {
+  margin-top: 27px;
+  width: 419px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.about .about-left .desc {
+  margin-top: 33px;
+  margin-left: 13px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.about .about-left strong {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.about .about-left strong::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+  top: 10px;
+  left: -12px;
+}
+
+.about .cta {
+  margin-top: 52px;
+  display: flex;
+}
+
+.about .cta .icon {
+  display: inline-block;
+  margin-left: 22px;
+  background: var(--primary-color);
+  color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .cta .icon:hover {
+  opacity: 0.9;
+}
+
+.about .cta .icon:nth-of-type(1) {
+  margin-left: 0;
+}
+
+/* Right */
+
+.about .about-right {
+  width: 64%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* .about .about-right .avatar {
+  position: absolute;
+} */
+
+.about-right .avatar .avt {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.about-right .avt-1 {
+  width: 92px;
+  height: 92px;
+  left: 216px;
+  top: -40px;
+}
+
+.about-right .avt-2 {
+  width: 110px;
+  height: 110px;
+  left: 641px;
+  top: -12px;
+}
+
+.about-right .avt-3 {
+  width: 235px;
+  height: 235px;
+  top: 66px;
+  left: 345px;
+}
+
+.about-right .avt-4 {
+  width: 78px;
+  height: 78px;
+}
+
+.about-right .avt-4-1 {
+  left: 72px;
+  bottom: 103px;
+}
+
+.about-right .avt-4-2 {
+  left: 284px;
+  bottom: -33px;
+}
+
+.about-right .avt-4-3 {
+  left: 641px;
+  bottom: -7px;
+}
+
+/* Create */
+.create {
+  margin-top: 130px;
+  padding: 76px 289px 88px 135px;
+  background: #def6f5;
+  width: 100%;
+  height: 272px;
+}
+
+.create .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create .title {
+  color: #070707;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+.create .desc {
+  margin-top: 20px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.create .btn {
+  margin-left: 410px;
+  width: 186px;
+  height: 68px;
+}
+
+/* Footer */
+.footer {
+  padding: 141px 144px 0;
+}
+
+.footer .column {
+  display: flex;
+}
+
+.footer .logo {
+  width: 10%;
+}
+
+.footer .item {
+  margin-left: 144px;
+  width: 22.5%;
+}
+
+.footer .item .title {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer .item a {
+  display: inline-block;
+  margin-top: 25px;
+  color: #535353;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+
+.copyright {
+  padding: 80px 478px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright .desc {
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .social a {
+  display: flex;
+  align-items: center;
+}
+
+.footer .social span {
+  margin-left: 9px;
 }
